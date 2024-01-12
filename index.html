@@ -741,6 +741,50 @@
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+	.bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
 	</style>
 </head>
 <body>
@@ -754,19 +798,19 @@
 <div class="bee-block bee-block-1 bee-menu">
 <nav class="bee-menu"><input class="bee-hamburger-trigger" id="bee-hamburger-memu-r0c1m0" type="checkbox"/><label class="bee-hamburger-controls" for="bee-hamburger-memu-r0c1m0"><span class="bee-hamburger-open"></span><span class="bee-hamburger-close"></span></label>
 <ul class="bee-horizontal with-bee-hamburger">
-<li><a href="#home" target="_self" title="">Home</a></li>
-<li><a href="#about" target="_self" title="">About Us</a></li>
-<li><a href="#worked" target="_self" title="">Work</a></li>
-<li><a href="#services" target="_self" title="">Services</a></li>
-<li><a href="#team" target="_self" title="">Team</a></li>
+<a href="#home" target="_self" ><button class="bn30">Home</button></a>
+<a href="#about" target="_self" ><button class="bn30">About Us</button></a>
+<a href="#worked" target="_self" ><button class="bn30">Work</button></a>
+<a href="#services" target="_self" ><button class="bn30">Services</button></a>
+<a href="#team" target="_self" ><button class="bn30">Team</button></a>
 <li class="dropdown">
-    <a href="#" class="dropbtn">Upcoming Events</a>
+    <a href="#" class="dropbtn bn30" >Upcoming Events</a>
     <div class="dropdown-content">
-        <a href="https://airtech-ctf.offensiox.com" target="_blank" title="">AirTech CTF 2024</a>
-        <a href="https://ctf.offensiox.com" target="_blank" title="">BanCon CTF 2024</a>
+        <a href="https://airtech-ctf.offensiox.com" target="_blank" title="" class="bn30" >AirTech CTF 2024</a>
+        <a href="https://ctf.offensiox.com" target="_self" title="" class="bn30" >BanCon CTF 2024</a>
     </div>
 </li>
-<li><a href="#contact" target="_self" title="">Contact Us</a></li>
+<a href="#contact" target="_self" ><button class="bn30">Contact US</button></a>
 </ul>
 </nav>
 </div>
